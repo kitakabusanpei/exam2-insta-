@@ -78,8 +78,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.default_url_options = {host: 'blooming-mountain-10815.herokuapp.com/'}
-  ActonMailer::Base.delivery_method = :smtp
-  ActioMailer::Base.smtp_settings =
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings =
   {
     user_name: ENV['SENDGRID_USERNAME'],
     password: ENV['SENDGRID_PASSWORD'],

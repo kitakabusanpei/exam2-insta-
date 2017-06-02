@@ -105,3 +105,17 @@ html {
 body {
   text-align: center;
 }
+
+.flash {
+  color: white;
+  padding-top: 10px;
+}
+
+li .white {
+  background-color: white;
+}
+
+ul .white {
+  background-color: white;
+  z-index: 500;
+}

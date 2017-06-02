@@ -77,7 +77,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.default_url_option = { host: blooming-mountain-10815.herokuapp.com/}
+  config.action_mailer.default_url_options = {host: 'blooming-mountain-10815.herokuapp.com/'}
   ActonMailer::Base.delivery_method = :smtp
   ActioMailer::Base.smtp_settings =
   {

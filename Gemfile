@@ -43,9 +43,12 @@ group :development, :test do
   gem 'spring'
   gem 'pry-rails'
   gem 'better_errors'
+  gem 'letter_opener_web'
 end
 
 gem 'twitter-bootstrap-rails'
 gem 'jquery-turbolinks'
 gem 'rails_12factor', group: :production
 gem 'devise'
+gem 'rails_admin'
+gem 'cancan'

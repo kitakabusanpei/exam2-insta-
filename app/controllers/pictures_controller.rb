@@ -15,8 +15,10 @@ class PicturesController < ApplicationController
 
   def create
     @picture = Picture.new(pictures_params)
+    @picture.user.id = current_user.id
     if @picture.save
       redirect_to pictures_path, notice: "写真を投稿しました！" #indexに飛ばす
+      NoticeMailer.sendmail_picture(@picture).deliver
     else
       render 'new'
     end

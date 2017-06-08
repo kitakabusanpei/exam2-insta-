@@ -20,6 +20,7 @@
  <br>
  <%= f.label :写真 %>
  <%= f.file_field :image %>
+ <%= f.hidden_field :image_cache %>
  <br>
  <%= f.submit '投稿', class: 'btn btn-primary btn-block' %>
 <% end %>

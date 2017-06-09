@@ -1,6 +1,6 @@
 class PicturesController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_piuture, only: [:edit, :update, :destroy]
+  before_action :set_picture, only: [:edit, :update, :destroy]
   def index
     @pictures = Picture.all
   end
@@ -24,7 +24,7 @@ class PicturesController < ApplicationController
 
   def update
     if @picture.update(pictures_params)
-      redilect_to pictures_path, notice: "写真を更新しました！"
+      redirect_to pictures_path, notice: "写真を更新しました！"
     else
       render 'edit'
     end
@@ -32,7 +32,7 @@ class PicturesController < ApplicationController
 
   def destroy
     @picture.destroy
-    ridilect_to pictures_path, notice: "写真を削除しました!"
+    redirect_to pictures_path, notice: "写真を削除しました!"
   end
 
 

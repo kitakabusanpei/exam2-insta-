@@ -4,16 +4,20 @@
 <section class="function container-fluid">
  <div class="container fluid">
   <div class="row">
-    <div class="col-md-5 col-sm-5">
+    <div class="col-lg-5 col-md-5 col-sm-5 hidden-xs">
       <div class="top-image">
-     <img src="<%= asset_path "sumaho.png" %>">
-      </div>
+       <%= link_to image_tag('/assets/sumaho.png'), new_user_session_path, class: "sumahoimg" %>
+     </div>
     </div>
-    <div class="col-md-5 col-sm-5">
+    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-offset-1 col-xs-10  col-xs-offset-1">
       <div class="top-message">
        <h1>お気に入りの写真を投稿しよう</h1>
       </div>
     </div>
+    <div class="hidden-lg hidden-md hidden-sm col-xs-offset-2 col-xs-8 col-xs-offset-2">
+      <div class="top-image">
+       <%= link_to image_tag('/assets/sumaho.png'), new_user_session_path, class: "sumahoimg" %>
+     </div>
    </div>
   </div>
 </section>

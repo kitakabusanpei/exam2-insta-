@@ -22,14 +22,14 @@
       <%= link_to "インスタもどき", root_path, class: "navbar-brand" %>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right white">
-        <li class="white"><%= link_to "写真", pictures_path %></li>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="white"><%= link_to "写真", pictures_path, class: "glyphicon glyphicon-camera" %></li>
         <% if user_signed_in? %>
-          <li class="white"><%= link_to 'マイページ', edit_user_registration_path %></li>
-          <li class="white"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+          <li class="white"><%= link_to 'マイページ', edit_user_registration_path, class: "glyphicon glyphicon-user" %></li>
+          <li class="white"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete , class: "glyphicon glyphicon-log-out"%></li>
         <% else %>
-          <li class="white"><%= link_to 'ログイン', new_user_session_path %></li>
-          <li class="white"><%= link_to 'サインアップ', new_user_registration_path %></li>
+          <li class="white"><%= link_to 'ログイン', new_user_session_path, class: "glyphicon glyphicon-log-in" %></li>
+          <li class="white"><%= link_to 'サインアップ', new_user_registration_path, class: "glyphicon glyphicon-pencil" %></li>
         <% end %>
       </ul>
     </div>

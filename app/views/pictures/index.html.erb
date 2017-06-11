@@ -9,7 +9,7 @@
      <h3>投稿者名：<%= picture.user.name %></h3>
      <h4>タイトル：<%= picture.title %></h4>
      <p>コメント：<%= picture.content %></p>
-     <p><%= image_tag picture.image %></p>
+     <p class="image-post"><%= image_tag picture.image %></p>
      <%= link_to "編集", edit_picture_path(picture.id), class: 'btn btn-default btn-sm btn-success' %>
      <%= link_to "削除", picture_path(picture.id), method: :delete, data: { confirm: '本当に削除して良いですか'}, class: 'btn btn-default btn-sm btn btn-danger' %>
    </div>

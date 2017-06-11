@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 header {
   width: 100%;
-  background-color: #2c3e50;
+  background-color: #d5dfff;
   height: 54px;
 }
 
@@ -11,44 +11,44 @@ header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 .navbar {
-    background-color: white;
-    color: white;
+    background-color: #d5dfff;
+    color: #103894;
     margin-bottom: 0px;
 }
 .navbar-default {
   .navbar-brand {
-    color: #808080;
+    color: #103894;
     &:hover {
-      color: #003399;
+      color: #a10b0b;
     }
   }
   .navbar-nav > li > a {
-    color: #808080;
+    color: #103894;
     &:hover, &:focus {
-      color: #003399;
+      color: #a10b0b;
     }
   }
   .navbar-nav > .open > a {
     background-color: transparent;
-    color: #808080;
+    color: #103894;
     &:hover, &:focus {
       background-color: transparent;
-      color: #003399;
+      color: #a10b0b;
     }
   }
 }
 @media (max-width: 767px) {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #808080;
+    color: #103894;
     text-align: center;
     &:hover, &:focus {
-      color: #003399;
+      color: #7635a9;
     }
   }
   .navbar-default .navbar-toggle {
-    background-color: transparent;
+    background-color: #d5dfff;
     &:hover, &:focus {
-      background-color: transparent;
+      background-color: #edf1ff;
     }
   }
 }
@@ -62,14 +62,14 @@ header {
 }
 
 footer {
-  // width: 100%;
-  // background-color: white;
-  // padding: 0 0 10px 0;
-  // color: white;
-  // margin: auto;
-  // padding-bottom: 10px;
-  // position: absolute;
-  // bottom: 0;
+  width: 100%;
+  background-color: #d5dfff;
+  padding: 20px 0 10px 0;
+  color: #103894;
+  margin: auto;
+  padding-bottom: 10px;
+  position: absolute;
+  bottom: 0;
 }
 
 html {
@@ -86,10 +86,17 @@ body {
 }
 
 ul .white {
-  background-color: white;
+  background-color: #d5dfff;
   z-index: 500;
 }
 
 img{
   max-width: 100%;
+}
+
+.image-post {
+  width: 380px;
+  height: 300px;
+  // display: inline-block;
+  // text-align: center;
 }
